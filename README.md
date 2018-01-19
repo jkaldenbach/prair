@@ -1,4 +1,4 @@
-# Prayr API
+# Prair API
 
 Prayer request tracker for churches
 
