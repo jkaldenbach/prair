@@ -1,7 +1,7 @@
 package routes
 
 import (
-	h "kaldenbach.design/prayr/handlers"
+	h "kaldenbach.design/prair/handlers"
 )
 
 var userRoutes = Routes{

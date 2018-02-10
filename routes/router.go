@@ -5,7 +5,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	mw "kaldenbach.design/prayr/middleware"
+	mw "kaldenbach.design/prair/middleware"
 )
 
 // NewRouter : creates a new url router

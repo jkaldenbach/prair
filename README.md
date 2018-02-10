@@ -4,7 +4,7 @@ Prayer request tracker for churches
 
 ## Dependencies
 
-Prayr uses `dep` for dependecy management
+Prair uses `dep` for dependecy management
 
 `fresh` is handy for running the server in development
 

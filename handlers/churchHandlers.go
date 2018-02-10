@@ -2,10 +2,10 @@ package handlers
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 
-	"github.com/gorilla/mux"
-	m "kaldenbach.design/prayr/models"
+	m "kaldenbach.design/prair/models"
 )
 
 // ChurchIndex : list churches
@@ -24,8 +24,17 @@ func ChurchIndex(w http.ResponseWriter, r *http.Request) {
 
 // ChurchCreate : create church
 func ChurchCreate(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	name := vars["name"]
+	name := r.FormValue("name")
+
+	var c m.Church
+	decoder := json.NewDecoder(r.Body)
+	decErr := decoder.Decode(&c)
+	if decErr != nil {
+		fmt.Println(decErr)
+		panic(decErr)
+	}
+	fmt.Println(c)
+
 	church := m.Church{
 		Name: name,
 	}

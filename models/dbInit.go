@@ -12,7 +12,7 @@ var DB gorm.DB
 
 // InitDb : initialize the database connection
 func InitDb() *gorm.DB {
-	db, err := gorm.Open("sqlite3", "prayr.db")
+	db, err := gorm.Open("sqlite3", "prair.db")
 	if err != nil {
 		fmt.Println(err)
 		panic("failed to connect to database")

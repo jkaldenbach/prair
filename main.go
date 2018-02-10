@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	m "kaldenbach.design/prayr/models"
-	"kaldenbach.design/prayr/routes"
+	m "kaldenbach.design/prair/models"
+	"kaldenbach.design/prair/routes"
 )
 
 func main() {
